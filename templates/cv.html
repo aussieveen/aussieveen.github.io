@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — {{ config.extra.author }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ get_url(path='cv.css') }}">
+</head>
+<body>
+<div class="cv">
+
+  <header class="cv-header">
+    <div class="cv-header-left">
+      <h1 class="cv-name">{{ config.extra.author }}</h1>
+      <p class="cv-role">{{ config.extra.role }}</p>
+    </div>
+    <div class="cv-contact">
+      <span>{{ config.extra.location }} · {{ config.extra.availability }}</span>
+      <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+      <a href="{{ config.extra.linkedin }}" target="_blank">linkedin.com/in/simonmcwhinnie</a>
+      <a href="{{ config.extra.github }}" target="_blank">github.com/aussieveen</a>
+      <a href="{{ config.base_url }}" target="_blank">aussieveen.github.io</a>
+    </div>
+  </header>
+
+  <div class="cv-body">
+
+    <main class="cv-main">
+
+      <section class="cv-section">
+        <p class="cv-summary">{{ config.extra.cv.summary }}</p>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-heading">Experience</h2>
+
+        {% for job in config.extra.cv_experience %}
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <div>
+              <span class="cv-company">{{ job.company }}</span>
+              <span class="cv-job-title"> · {{ job.title }}</span>
+            </div>
+            <span class="cv-period">{{ job.period }}</span>
+          </div>
+          <ul class="cv-highlights">
+            {% for point in job.highlights %}
+            <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
+          {% if job.awards is defined and job.awards %}
+          <p class="cv-awards">{{ job.awards }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        <div class="cv-earlier">
+          <div class="cv-earlier-header">
+            <span>Earlier career</span>
+            <span class="cv-period">{{ config.extra.cv_earlier.period }}</span>
+          </div>
+          <p class="cv-earlier-companies">{{ config.extra.cv_earlier.companies }}</p>
+          <p>{{ config.extra.cv_earlier.summary }}</p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <aside class="cv-sidebar">
+
+      <section class="cv-section">
+        <h2 class="cv-section-heading">Skills</h2>
+        {% for group in config.extra.cv_skills %}
+        <div class="cv-skills-group">
+          <div class="cv-skills-group-name">{{ group.name }}</div>
+          <div class="cv-skills-list">{{ group.items }}</div>
+        </div>
+        {% endfor %}
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-heading">Education</h2>
+        <div class="cv-degree">{{ config.extra.cv_education.degree }}</div>
+        <div class="cv-institution">{{ config.extra.cv_education.institution }}</div>
+      </section>
+
+    </aside>
+
+  </div>
+
+</div>
+</body>
+</html>

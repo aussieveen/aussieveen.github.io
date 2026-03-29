@@ -1,0 +1,222 @@
+base_url = "https://aussieveen.github.io"
+compile_sass = true
+build_search_index = false
+title = "Simon McWhinnie — Senior PHP Developer"
+
+[markdown]
+
+[extra]
+author = "Simon McWhinnie"
+role = "Senior PHP Developer"
+bio = "I enjoy solving complex problems and creating robust solutions. I am someone you can come to with a complex brief and trust to deliver within the required timeframe. I primarily work in PHP but also reach for Rust and Python where the problem calls for it."
+email = "simon.mcwhinnie@gmail.com"
+linkedin = "https://www.linkedin.com/in/simonmcwhinnie"
+github = "https://github.com/aussieveen"
+location = "Near London, UK"
+availability = "Hybrid"
+
+[[extra.stats]]
+value = "15+"
+label = "Years experience"
+
+[[extra.stats]]
+value = "3"
+label = "Languages"
+
+[[extra.stats]]
+value = "5"
+label = "Awards"
+
+[[extra.stats]]
+value = "3"
+label = "Critical business projects delivered"
+
+[[extra.experience]]
+company = "Immediate Media"
+title = "PHP Developer → Senior PHP Developer"
+period = "Jun 2018 – Present"
+note = "Promoted to Senior Developer in March 2020"
+callout = "Delivered two back-to-back critical business projects on time and within budget: a 3-year micro-services platform rebuild for BBC Good Food, and a full subscription platform replacement in 9 months — both recognised with company-wide awards."
+highlights = [
+  "Integral part of the BBC Good Food migration onto a new platform — a 3-year project (2019–2022) working alongside other senior developers to design and deliver a completely new micro-services architecture in Symfony, replacing a WordPress monolith.",
+  "Became a critical contributor to the message queue service, handling inter-service communication and pushing content from WordPress into the content-providing APIs underpinning the new architecture.",
+  "Led development of mechanisms supporting a new Customer Data Platform — a critical marketing initiative delivered on time within a year. Built multiple PHP services including an event-driven, worker-based solution pushing data to email and CDP systems, and a Lambda-based web admin application supporting GDPR requests with access controlled via the company's internal identity solution.",
+  "Key contributor to replacing the entire web and print subscription platform with a new third-party provider — a 9-month project delivered on time and within budget. Provided CDP integration expertise, extensive code reviews, and technical guidance throughout.",
+  "Day-to-day responsibilities include ensuring code quality, contributing to architectural discussions, mentoring, ticket writing, and acting as a source of both domain and general technical knowledge.",
+  "Developed an API testing framework in JavaScript using Postman, which was adopted across the business to improve confidence in service integrations.",
+  "Regularly ran knowledge-sharing sessions to walk the team through new features and tools being developed.",
+  "Provided formal line management during 2024–2025, including 1-2-1s, performance reviews, and leave approval for direct reports.",
+]
+awards = [
+  "2019 — P&T Most Improved Developer",
+  "2024 — P&T Most Innovative Developer (peer-voted)",
+  "2025 — Nominated for P&T Person of the Year",
+  "2025 — P&T Team of the Year (Subscription Platform project)",
+  "2025 — CEO Award (Subscription Platform project)",
+]
+
+[[extra.experience]]
+company = "Southbank Investment Research"
+title = "Senior Developer"
+period = "May 2017 – May 2018"
+callout = "Redeployed the entire company website onto AWS and led a React-based member login area with integrated payment systems."
+highlights = [
+  "Continued management and team organisation responsibilities from previous role.",
+  "Redeployed the entire company website onto new AWS infrastructure.",
+  "Drove the development of a React-based member login area providing access to exclusive content and integrated payment systems.",
+]
+
+[[extra.experience]]
+company = "MoneyWeek"
+title = "Web Developer"
+period = "Jun 2015 – May 2017"
+highlights = [
+  "Maintained and enhanced the existing company site.",
+  "Built and deployed microsites for individual company newsletters.",
+  "Began taking on managerial and team organisation responsibilities.",
+]
+
+[[extra.experience]]
+company = "Time Inc. UK"
+title = "WordPress Developer"
+period = "Dec 2014 – May 2015"
+highlights = [
+  "Maintained and delivered new features across a large-scale WordPress multisite installation.",
+]
+
+[[extra.experience]]
+company = "Ovum"
+title = "Junior PHP Developer"
+period = "Jan 2014 – Dec 2014"
+note = "Ovum was a restructured entity of Informa, my previous employer."
+highlights = [
+  "WordPress and Symfony development across company products.",
+]
+
+[[extra.experience]]
+company = "Informa"
+callout = "Transitioned the company's entire Flash web presence to JavaScript — and introduced Git version control — before either was common practice."
+title = "Web Developer → Senior Technical Web Developer"
+period = "Nov 2010 – Jan 2014"
+highlights = [
+  "Originally hired as a Flash developer; quickly pivoted to full web stack as the industry moved on.",
+  "Reworked all existing Flash-based web features into JavaScript-driven equivalents.",
+  "Introduced Git version control for managing the codebase.",
+  "Developed an agenda creator and editor within WordPress, leveraging custom post types and JavaScript to deliver drag-and-drop functionality before WordPress supported it natively.",
+]
+
+[[extra.skill_groups]]
+name = "Languages"
+skills = ["PHP", "Python", "Rust"]
+
+[[extra.skill_groups]]
+name = "Frameworks & CMS"
+skills = ["Symfony", "WordPress", "Composer", "Twig"]
+
+[[extra.skill_groups]]
+name = "Cloud & Infrastructure"
+skills = ["AWS (SQS, ECS, EC2, Lambda, Secrets Manager)", "Serverless", "Docker", "Git", "Linux", "REST APIs", "CI/CD", "PHP-FPM", "OPcache"]
+
+[[extra.skill_groups]]
+name = "Databases"
+skills = ["MySQL", "MongoDB", "Redis", "Elasticsearch"]
+
+[[extra.skill_groups]]
+name = "Architecture"
+skills = ["Micro-services", "Event-driven architecture", "Message queues"]
+
+[[extra.skill_groups]]
+name = "Process"
+skills = ["Agile"]
+
+[[extra.skill_groups]]
+name = "Testing"
+skills = ["PHPUnit", "Postman"]
+
+[[extra.skill_groups]]
+name = "AI Tools"
+skills = ["Claude Code", "GitHub Copilot", "Codex"]
+
+[[extra.projects]]
+name = "Devtool"
+description = "A Rust-based TUI designed to streamline my development workflow by simplifying and automating common tasks."
+tech = ["Rust", "TUI"]
+url = "https://github.com/aussieveen/devtool"
+
+[[extra.projects]]
+name = "Todo"
+description = "A Rust-based TUI todo manager following the todo.txt spec, with Google Drive sync to keep the list consistent across devices."
+tech = ["Rust", "TUI", "Google Drive API"]
+url = "https://github.com/aussieveen/todo-tui"
+
+[[extra.projects]]
+name = "Cookbook"
+description = "A Symfony application for managing my personal recipe collection. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "Self-hosted"]
+url = ""
+
+[[extra.projects]]
+name = "Inventory"
+description = "A Symfony application for tracking where things are stored around the home. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "Self-hosted"]
+url = "https://github.com/aussieveen/inventory"
+
+[extra.cv]
+summary = "Senior PHP developer with 15+ years of experience delivering complex web systems at scale. At Immediate Media for nearly 8 years, I have led three critical business projects, co-designed a micro-services architecture serving millions of readers, and held formal line management responsibility. I am looking to step into a lead or principal role where I can drive technical direction and help engineering teams deliver at their best."
+
+[[extra.cv_experience]]
+company = "Immediate Media"
+title = "Senior PHP Developer"
+period = "Jun 2018 – Present"
+highlights = [
+  "Co-designed and delivered a Symfony micro-services architecture replacing a WordPress monolith for BBC Good Food, building the AWS SQS inter-service message queue layer (2019–2022).",
+  "Designed and delivered a Customer Data Platform integration within a year — event-driven PHP services pushing data to email and CDP systems, and a Lambda/Serverless GDPR admin application with internal identity-controlled access.",
+  "Key contributor to replacing the entire web and print subscription platform with a third-party provider in 9 months, on time and within budget.",
+  "Built a business-wide API testing framework in JavaScript using Postman; ran regular knowledge-sharing sessions across the engineering team.",
+  "Formal line management (2024–2025); ongoing responsibilities include architectural review, mentoring, and code quality.",
+]
+awards = "P&T Most Improved Developer (2019) · Most Innovative Developer, peer-voted (2024) · Team of Year & CEO Award (2025)"
+
+[[extra.cv_experience]]
+company = "Southbank Investment Research"
+title = "Senior Developer"
+period = "May 2017 – May 2018"
+highlights = [
+  "Redeployed the entire company website onto AWS infrastructure.",
+  "Led a React-based member login area providing exclusive content access and integrated payment systems.",
+]
+
+[extra.cv_earlier]
+period = "2010 – 2017"
+companies = "Informa · Ovum · Time Inc. UK · MoneyWeek"
+summary = "Progressed from Web Developer to Senior across digital publishing businesses. Led a company-wide Flash-to-JavaScript migration, introduced Git version control, built WordPress multisite solutions, and took on team management responsibilities."
+
+[[extra.cv_skills]]
+name = "Languages"
+items = "PHP · Symfony · WordPress · Composer · Twig · Python · Rust"
+
+[[extra.cv_skills]]
+name = "Cloud & Infrastructure"
+items = "AWS (SQS, ECS, EC2, Lambda) · Docker · Serverless · CI/CD · Linux"
+
+[[extra.cv_skills]]
+name = "Data"
+items = "MySQL · MongoDB · Redis · Elasticsearch"
+
+[[extra.cv_skills]]
+name = "Architecture"
+items = "Micro-services · Event-driven · REST APIs · Message queues"
+
+[[extra.cv_skills]]
+name = "Testing & Tools"
+items = "PHPUnit · Postman · Git · Agile"
+
+[extra.cv_education]
+degree = "Bachelor of Multimedia"
+institution = "Griffith University, Brisbane, Australia"
+
+[extra.ai_take]
+body = "AI is a tool — a powerful one, but a tool nonetheless. I enjoy problem-solving: not just arriving at a solution, but understanding how it is built and why it works the way it does. There is something lost when AI handles the details, and I think that matters. That said, the industry is moving and I am moving with it. The developers who thrive will be those who use AI with judgement, not those who outsource their thinking to it."
+
+[extra.hobbies]
+items = ["Cooking", "Video games", "Homelabbing", "Making work Slack GIFs from TV and film"]

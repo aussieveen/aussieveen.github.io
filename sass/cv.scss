@@ -1,0 +1,275 @@
+// CV stylesheet — screen preview + print to PDF
+
+$text:       #1c1c2e;
+$subtext:    #3a3a5c;
+$muted:      #60728a;
+$faint:      #9099b2;
+$accent:     #88c0d0;
+$gold:       #9a7a1a;
+$bg-page:    #e5e9f0;
+$bg-tint:    #f4f5f9;
+$border:     #dde1ee;
+
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg-page;
+  font-family: $font-sans;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ── Page shell ────────────────────────────────────────────────
+.cv {
+  background: white;
+  color: $text;
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: 2rem auto;
+  padding: 13mm 13mm 13mm 15mm;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.14);
+}
+
+// ── Header ────────────────────────────────────────────────────
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 9px;
+  margin-bottom: 13px;
+  border-bottom: 2px solid $accent;
+}
+
+.cv-name {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: $text;
+  line-height: 1;
+}
+
+.cv-role {
+  font-size: 9.5pt;
+  color: $muted;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.cv-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 7.5pt;
+  color: $muted;
+  font-family: $font-mono;
+
+  a {
+    color: $muted;
+    text-decoration: none;
+  }
+}
+
+// ── Body layout ───────────────────────────────────────────────
+.cv-body {
+  display: grid;
+  grid-template-columns: 1fr 52mm;
+  gap: 0 10mm;
+  align-items: start;
+}
+
+// ── Section ───────────────────────────────────────────────────
+.cv-section {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-section-heading {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $accent;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 8px;
+}
+
+// ── Summary ───────────────────────────────────────────────────
+.cv-summary {
+  font-size: 8.5pt;
+  line-height: 1.65;
+  color: $subtext;
+}
+
+// ── Experience ────────────────────────────────────────────────
+.cv-job {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 4px;
+}
+
+.cv-company {
+  font-size: 9pt;
+  font-weight: 600;
+  color: $text;
+}
+
+.cv-job-title {
+  font-size: 8.5pt;
+  color: $muted;
+  font-weight: 400;
+}
+
+.cv-period {
+  font-size: 7.5pt;
+  color: $faint;
+  font-family: $font-mono;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cv-highlights {
+  list-style: none;
+
+  li {
+    font-size: 8pt;
+    color: $subtext;
+    padding-left: 10px;
+    position: relative;
+    line-height: 1.55;
+    margin-bottom: 2px;
+
+    &::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: $accent;
+      font-weight: 700;
+    }
+  }
+}
+
+.cv-awards {
+  font-size: 7.5pt;
+  color: $gold;
+  font-style: italic;
+  margin-top: 4px;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.cv-earlier {
+  background: $bg-tint;
+  border-left: 2px solid $accent;
+  border-radius: 0 3px 3px 0;
+  padding: 7px 9px;
+  margin-top: 9px;
+
+  .cv-earlier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+
+    span:first-child {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: $text;
+    }
+  }
+
+  .cv-earlier-companies {
+    font-size: 7.5pt;
+    color: $muted;
+    font-style: italic;
+    margin-bottom: 3px;
+  }
+
+  p:last-child {
+    font-size: 7.5pt;
+    color: $subtext;
+    line-height: 1.55;
+  }
+}
+
+// ── Sidebar ───────────────────────────────────────────────────
+.cv-skills-group {
+  margin-bottom: 7px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-skills-group-name {
+  font-size: 7pt;
+  font-weight: 600;
+  color: $muted;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 2px;
+}
+
+.cv-skills-list {
+  font-size: 7.5pt;
+  color: $subtext;
+  font-family: $font-mono;
+  line-height: 1.6;
+}
+
+.cv-degree {
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: $text;
+  line-height: 1.4;
+}
+
+.cv-institution {
+  font-size: 7.5pt;
+  color: $muted;
+  margin-top: 2px;
+}
+
+// ── Print ─────────────────────────────────────────────────────
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    background: white;
+  }
+
+  .cv {
+    box-shadow: none;
+    margin: 0;
+    max-width: none;
+    min-height: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

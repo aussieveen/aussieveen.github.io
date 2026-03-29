@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<nav>
+  <div class="nav-inner">
+    <a href="#about" class="nav-name">{{ config.extra.author }}</a>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#thoughts">Thoughts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  {# ── About ──────────────────────────────────────────────────── #}
+  <section id="about" class="fade-in">
+    <h1 class="hero-name">{{ config.extra.author }}</h1>
+    <p class="hero-role">{{ config.extra.role }}</p>
+    <p class="hero-bio">{{ config.extra.bio }}</p>
+    <div class="hero-stats">
+      {% for stat in config.extra.stats %}
+      <div class="hero-stat">
+        <span class="stat-value">{{ stat.value }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ── Experience ─────────────────────────────────────────────── #}
+  <section id="experience">
+    <h2 class="section-heading">Experience</h2>
+    <div class="timeline">
+      {% for job in config.extra.experience %}
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <div class="timeline-meta">
+            <div class="timeline-company">{{ job.company }}</div>
+            <div class="timeline-title">{{ job.title }}</div>
+            {% if job.note is defined and job.note %}
+            <div class="timeline-note">{{ job.note }}</div>
+            {% endif %}
+          </div>
+          <div class="timeline-period">{{ job.period }}</div>
+        </div>
+        {% if job.callout is defined and job.callout %}
+        <blockquote class="timeline-callout">{{ job.callout }}</blockquote>
+        {% endif %}
+        <ul class="timeline-highlights">
+          {% for point in job.highlights %}
+          <li>{{ point }}</li>
+          {% endfor %}
+        </ul>
+        {% if job.awards is defined and job.awards %}
+        <div class="timeline-awards">
+          {% for award in job.awards %}
+          <div class="award">{{ award }}</div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ── GIF break ──────────────────────────────────────────────── #}
+  <div class="gif-break fade-in">
+    <img src="/sorry-for-the-pr.gif" alt="Sorry for the PR" loading="lazy">
+    <p class="gif-caption">When you have a particularly nasty pull request for someone to review</p>
+  </div>
+
+  {# ── Skills ─────────────────────────────────────────────────── #}
+  <section id="skills">
+    <h2 class="section-heading">Skills</h2>
+    <div class="skill-groups fade-in">
+      {% for group in config.extra.skill_groups %}
+      <div class="skill-group">
+        <div class="skill-group-name">{{ group.name }}</div>
+        <div class="skill-tags">
+          {% for skill in group.skills %}
+          <span class="skill-tag">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ── GIF break ──────────────────────────────────────────────── #}
+  <div class="gif-break fade-in">
+    <img src="/itworked.gif" alt="It worked" loading="lazy">
+    <p class="gif-caption">When it works the first time</p>
+  </div>
+
+  {# ── Projects ───────────────────────────────────────────────── #}
+  <section id="projects">
+    <h2 class="section-heading">Projects</h2>
+    <div class="projects-grid fade-in">
+      {% for project in config.extra.projects %}
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">{{ project.name }}</div>
+          {% if project.url is defined and project.url %}
+          <a class="project-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          {% endif %}
+        </div>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-tech">
+          {% for tag in project.tech %}
+          <span class="tech-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ── GIF break ──────────────────────────────────────────────── #}
+  <div class="gif-break fade-in">
+    <img src="/script-running-as-senior.gif" alt="Script running as senior" loading="lazy">
+    <p class="gif-caption">When you're absolutely certain the migration script is going to run without a hitch</p>
+  </div>
+
+  {# ── Thoughts ───────────────────────────────────────────────── #}
+  <section id="thoughts">
+    <h2 class="section-heading">Thoughts</h2>
+    <div class="thoughts-grid fade-in">
+      <div class="thought-block">
+        <h3>On AI in Development</h3>
+        <p>{{ config.extra.ai_take.body }}</p>
+      </div>
+      <div class="thought-block">
+        <h3>Outside of Work</h3>
+        <ul class="hobbies-list">
+          {% for item in config.extra.hobbies.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {# ── Contact ────────────────────────────────────────────────── #}
+  <section id="contact">
+    <h2 class="section-heading">Contact</h2>
+    <a class="cv-link" href="/cv/" target="_blank">View CV</a>
+    <div class="contact-links fade-in">
+      <div class="contact-link">
+        <span class="contact-label">Location</span>
+        <span>{{ config.extra.location }} · {{ config.extra.availability }}</span>
+      </div>
+      <a class="contact-link" href="mailto:{{ config.extra.email }}">
+        <span class="contact-label">Email</span>
+        <span>{{ config.extra.email }}</span>
+      </a>
+      <a class="contact-link" href="{{ config.extra.linkedin }}" target="_blank" rel="noopener noreferrer">
+        <span class="contact-label">LinkedIn</span>
+        <span>{{ config.extra.linkedin }}</span>
+      </a>
+      <a class="contact-link" href="{{ config.extra.github }}" target="_blank" rel="noopener noreferrer">
+        <span class="contact-label">GitHub</span>
+        <span>{{ config.extra.github }}</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Built with <a href="https://www.getzola.org" target="_blank" rel="noopener noreferrer">Zola</a>
+</footer>
+
+{% endblock %}

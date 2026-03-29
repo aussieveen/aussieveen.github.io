@@ -1,0 +1,701 @@
+// ── Nord ──────────────────────────────────────────────────────
+// Polar Night
+$base:     #2e3440;
+$mantle:   #262c38;
+$crust:    #1e2430;
+$surface0: #3b4252;
+$surface1: #434c5e;
+$surface2: #4c566a;
+// intermediate overlays
+$overlay0: #60728a;
+$overlay1: #7b8ca6;
+// Snow Storm
+$text:     #eceff4;
+$subtext0: #d8dee9;
+$subtext1: #e5e9f0;
+// Frost
+$lavender: #81a1c1;
+$blue:     #88c0d0;
+$mauve:    #88c0d0;
+// Aurora
+$green:    #a3be8c;
+$yellow:   #ebcb8b;
+
+// ── Typography ────────────────────────────────────────────────
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+// ── Layout ────────────────────────────────────────────────────
+$max-width:   860px;
+$section-gap: 3rem;
+
+// ── Reset ─────────────────────────────────────────────────────
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $base;
+  color: $text;
+  font-family: $font-sans;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ── Nav ───────────────────────────────────────────────────────
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba($mantle, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid $surface0;
+
+  .nav-inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: $lavender;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+    flex-wrap: wrap;
+
+    a {
+      color: $subtext0;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $lavender;
+      }
+    }
+  }
+}
+
+// ── Main container ────────────────────────────────────────────
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// ── Sections ──────────────────────────────────────────────────
+section {
+  padding: $section-gap 0;
+  border-bottom: 1px solid $surface0;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+// ── Section heading ───────────────────────────────────────────
+.section-heading {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $mauve;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+
+  &::after {
+    content: '';
+    display: block;
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, $surface1, transparent);
+  }
+}
+
+// ── Hero / About ──────────────────────────────────────────────
+#about {
+  padding-top: 3rem;
+
+  .hero-name {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: $text;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-role {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-weight: 400;
+    color: $lavender;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-bio {
+    font-size: 1rem;
+    color: $subtext1;
+    max-width: 620px;
+    line-height: 1.85;
+  }
+
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 2.5rem;
+    border: 1px solid $surface1;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 620px;
+  }
+
+  .hero-stat {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem 1rem;
+    background: $surface0;
+    border-right: 1px solid $surface1;
+    transition: background 0.2s ease;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      background: $surface1;
+    }
+  }
+
+  .stat-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $blue;
+    line-height: 1;
+    font-family: $font-mono;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    color: $subtext0;
+    text-align: center;
+    margin-top: 0.35rem;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+}
+
+// ── Experience timeline ───────────────────────────────────────
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  padding-left: 2.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 1.5rem;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, rgba($blue, 0.5), transparent);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  background: $surface0;
+  border: 1px solid $surface1;
+  border-left: 3px solid rgba($blue, 0.5);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-left-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-left-color: $blue;
+    box-shadow: 0 4px 24px rgba($crust, 0.5);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.35rem;
+    top: 1.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: $blue;
+    box-shadow: 0 0 10px rgba($blue, 0.5);
+    border: 2px solid $base;
+  }
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $surface1;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.timeline-company {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: $text;
+  line-height: 1.3;
+}
+
+.timeline-title {
+  font-size: 0.85rem;
+  color: $lavender;
+  font-weight: 500;
+}
+
+.timeline-period {
+  font-size: 0.75rem;
+  color: $overlay1;
+  font-family: $font-mono;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.timeline-note {
+  font-size: 0.775rem;
+  color: $green;
+  font-style: italic;
+}
+
+.timeline-callout {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: $text;
+  background: rgba($blue, 0.07);
+  border-left: 3px solid $blue;
+  border-radius: 0 5px 5px 0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.timeline-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+
+  li {
+    font-size: 0.875rem;
+    color: $subtext1;
+    padding-left: 1.1rem;
+    position: relative;
+    line-height: 1.65;
+
+    &::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+}
+
+.timeline-awards {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid $surface1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  .award {
+    font-size: 0.775rem;
+    color: $yellow;
+    font-family: $font-mono;
+    padding-left: 1.1rem;
+    position: relative;
+
+    &::before {
+      content: '★';
+      position: absolute;
+      left: 0;
+      font-size: 0.6rem;
+      top: 0.1rem;
+    }
+  }
+}
+
+// ── Skills ────────────────────────────────────────────────────
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.skill-group {
+  background: $surface0;
+  border: 1px solid $surface1;
+  border-top: 3px solid rgba($blue, 0.5);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-top-color: $blue;
+    box-shadow: 0 4px 20px rgba($crust, 0.4);
+  }
+}
+
+.skill-group-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  font-size: 0.78rem;
+  font-family: $font-mono;
+  color: $subtext1;
+  background: $surface1;
+  border: 1px solid $surface2;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  cursor: default;
+
+  &:hover {
+    background: $surface2;
+    border-color: $blue;
+    color: $text;
+  }
+}
+
+// ── Projects ──────────────────────────────────────────────────
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  background: $surface0;
+  border: 1px solid $surface1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: $mauve;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba($crust, 0.5);
+  }
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  gap: 0.75rem;
+}
+
+.project-name {
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: $text;
+}
+
+.project-link {
+  font-size: 0.75rem;
+  font-family: $font-mono;
+  color: $blue;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $lavender;
+    text-decoration: underline;
+  }
+}
+
+.project-description {
+  font-size: 0.875rem;
+  color: $subtext0;
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-tag {
+  font-size: 0.7rem;
+  font-family: $font-mono;
+  color: $mauve;
+  background: rgba($mauve, 0.1);
+  border: 1px solid rgba($mauve, 0.2);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+// ── Thoughts ──────────────────────────────────────────────────
+.thoughts-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.thought-block {
+  h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $lavender;
+    margin-bottom: 0.875rem;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $subtext1;
+    line-height: 1.85;
+  }
+}
+
+.hobbies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+
+  li {
+    font-size: 0.9rem;
+    color: $subtext1;
+    padding-left: 1.1rem;
+    position: relative;
+
+    &::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: $mauve;
+      font-weight: 700;
+    }
+  }
+}
+
+// ── CV link ───────────────────────────────────────────────────
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $base;
+  background: $blue;
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+  letter-spacing: 0.02em;
+
+  &::after {
+    content: '↗';
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    background: $lavender;
+    transform: translateY(-1px);
+  }
+}
+
+// ── Contact ───────────────────────────────────────────────────
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: $subtext1;
+  font-size: 0.9rem;
+  width: fit-content;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $lavender;
+  }
+
+  .contact-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $overlay1;
+    min-width: 72px;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+  }
+
+  &:hover .contact-label {
+    color: $mauve;
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────
+footer {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 2rem 3rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: $overlay0;
+  font-family: $font-mono;
+
+  a {
+    color: $overlay1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $lavender;
+    }
+  }
+}
+
+// ── GIF breaks ───────────────────────────────────────────────
+.gif-break {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 0.5rem;
+
+  img {
+    max-width: 460px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid $surface1;
+  }
+}
+
+.gif-caption {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: $overlay1;
+  text-align: center;
+  max-width: 460px;
+}
+
+// ── Scroll fade ───────────────────────────────────────────────
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ── Responsive ────────────────────────────────────────────────
+@media (max-width: 680px) {
+  nav .nav-links {
+    gap: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thoughts-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 1.25rem;
+  }
+
+  nav .nav-inner {
+    padding: 0.75rem 1.25rem;
+  }
+
+  footer {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  nav .nav-links {
+    gap: 0.75rem;
+
+    a {
+      font-size: 0.8rem;
+    }
+  }
+}
