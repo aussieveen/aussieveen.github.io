@@ -28,7 +28,7 @@ value = "5"
 label = "Awards"
 
 [[extra.stats]]
-value = "3"
+value = "5"
 label = "Critical business projects delivered"
 
 [[extra.experience]]
@@ -59,11 +59,11 @@ awards = [
 company = "Southbank Investment Research"
 title = "Senior Developer"
 period = "May 2017 – May 2018"
-callout = "Redeployed the entire company website onto AWS and led a React-based member login area with integrated payment systems."
+callout = "Delivered two critical projects: redeployed the entire company website onto AWS, and led a React-based member login area with integrated payment systems — providing subscribers access to exclusive content."
 highlights = [
   "Continued management and team organisation responsibilities from previous role.",
   "Redeployed the entire company website onto new AWS infrastructure.",
-  "Drove the development of a React-based member login area providing access to exclusive content and integrated payment systems.",
+  "Led development of a critical React-based member login area providing subscribers access to exclusive content, with fully integrated payment systems.",
 ]
 
 [[extra.experience]]
@@ -183,7 +183,7 @@ title = "Senior Developer"
 period = "May 2017 – May 2018"
 highlights = [
   "Redeployed the entire company website onto AWS infrastructure.",
-  "Led a React-based member login area providing exclusive content access and integrated payment systems.",
+  "Led development of a critical React-based member login area providing subscribers access to exclusive content, with fully integrated payment systems.",
 ]
 
 [extra.cv_earlier]
