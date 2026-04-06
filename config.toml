@@ -115,7 +115,7 @@ skills = ["Symfony", "WordPress", "Composer", "Twig"]
 
 [[extra.skill_groups]]
 name = "Cloud & Infrastructure"
-skills = ["AWS (SQS, ECS, EC2, Lambda, Secrets Manager)", "Serverless", "Docker", "Git", "Linux", "REST APIs", "CI/CD", "PHP-FPM", "OPcache"]
+skills = ["AWS (SQS, ECS, EC2, Lambda, Secrets Manager)", "Serverless", "Docker", "Git", "Linux", "REST APIs", "GitHub Actions", "Jenkins", "CodeBuild", "CodePipeline", "PHP-FPM", "OPcache"]
 
 [[extra.skill_groups]]
 name = "Databases"
@@ -153,7 +153,7 @@ url = "https://github.com/aussieveen/todo-tui"
 name = "Cookbook"
 description = "A Symfony application for managing my personal recipe collection. Self-hosted on my home server."
 tech = ["Symfony", "PHP", "Self-hosted"]
-url = ""
+url = "https://github.com/aussieveen/cookbook"
 
 [[extra.projects]]
 name = "Inventory"
@@ -197,7 +197,7 @@ items = "PHP · Symfony · WordPress · Composer · Twig · Python · Rust"
 
 [[extra.cv_skills]]
 name = "Cloud & Infrastructure"
-items = "AWS (SQS, ECS, EC2, Lambda) · Docker · Serverless · CI/CD · Linux"
+items = "AWS (SQS, ECS, EC2, Lambda) · Docker · Serverless · GitHub Actions · Jenkins · CodeBuild · CodePipeline · Linux"
 
 [[extra.cv_skills]]
 name = "Data"
