@@ -161,6 +161,12 @@ description = "A Symfony application for tracking where things are stored around
 tech = ["Symfony", "PHP", "Self-hosted"]
 url = "https://github.com/aussieveen/inventory"
 
+[[extra.projects]]
+name = "TUI Text Field"
+description = "A Rust crate providing a single-line text input widget with byte-correct, UTF-8-safe cursor navigation for terminal UI applications."
+tech = ["Rust", "TUI", "crates.io"]
+url = "https://github.com/aussieveen/tui-text-field"
+
 [extra.cv]
 summary = "Senior PHP developer with 15+ years of experience delivering complex web systems at scale. At Immediate Media for nearly 8 years, I have led three critical business projects, co-designed a micro-services architecture serving millions of readers, and held formal line management responsibility. I am looking to step into a lead or principal role where I can drive technical direction and help engineering teams deliver at their best."
 
