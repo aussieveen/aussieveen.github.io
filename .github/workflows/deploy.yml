@@ -13,7 +13,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build and deploy
-        uses: shalzz/zola-deploy-action@v0.19.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Zola
+        run: |
+          curl -sL https://github.com/getzola/zola/releases/download/v0.19.2/zola-v0.19.2-x86_64-unknown-linux-gnu.tar.gz \
+            | tar -xz -C /usr/local/bin
+
+      - name: Build site
+        run: zola build
+
+      - name: Generate CV PDF
+        run: |
+          python3 -m http.server 8080 --directory public &
+          sleep 2
+          google-chrome --headless=new --no-sandbox --no-pdf-header-footer \
+            --print-to-pdf=public/simon-mcwhinnie-cv.pdf \
+            http://localhost:8080/cv/
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

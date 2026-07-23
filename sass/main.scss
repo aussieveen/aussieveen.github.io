@@ -567,6 +567,12 @@ section {
 }
 
 // ── Contact ───────────────────────────────────────────────────
+.contact-signoff {
+  color: $subtext1;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
 .contact-links {
   display: flex;
   flex-direction: column;

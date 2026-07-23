@@ -8,7 +8,8 @@ title = "Simon McWhinnie — Senior PHP Developer"
 [extra]
 author = "Simon McWhinnie"
 role = "Senior PHP Developer"
-bio = "I enjoy solving complex problems and building robust, well-considered solutions — the messier the brief, the better. I stay calm under pressure, work through difficult problems methodically, and can be trusted to deliver. I primarily work in PHP, reaching for Rust and Python where the problem demands it. The GIFs scattered through this page are a fair character reference: I am Australian, and I refuse to take things too seriously when I do not have to."
+bio = "I enjoy solving complex problems and building robust, well-considered solutions — the messier the brief, the better. I stay calm under pressure, work through difficult problems methodically, and can be trusted to deliver. I primarily work in PHP, reaching for Rust and Python where the problem demands it. The GIFs scattered through this page are a fair character reference: I am Australian, and I refuse to take things too seriously when I do not have to. I am looking for a lead or principal role in a small, quality-focused team that has a say in product decisions — hybrid or remote, greenfield welcome."
+meta_description = "Senior PHP Developer with 16+ years experience. PHP, Rust, Python, AWS, micro-services, event-driven architecture. Near London, hybrid/remote. Seeking lead or principal roles."
 email = "simon.mcwhinnie@gmail.com"
 linkedin = "https://www.linkedin.com/in/simonmcwhinnie"
 github = "https://github.com/aussieveen"
@@ -24,7 +25,7 @@ value = "3"
 label = "Languages"
 
 [[extra.stats]]
-value = "5"
+value = "6"
 label = "Awards"
 
 [[extra.stats]]
@@ -42,9 +43,10 @@ highlights = [
   "Became a critical contributor to the message queue service, handling inter-service communication and pushing content from WordPress into the content-providing APIs underpinning the new architecture.",
   "Led development of mechanisms supporting a new Customer Data Platform — a critical marketing initiative delivered on time within a year. Built multiple PHP services including an event-driven, worker-based solution pushing data to email and CDP systems, and a Lambda-based web admin application supporting GDPR requests with access controlled via the company's internal identity solution.",
   "Key contributor to replacing the entire web and print subscription platform with a new third-party provider — a 9-month project delivered on time and within budget. Provided CDP integration expertise, extensive code reviews, and technical guidance throughout.",
-  "Day-to-day responsibilities include ensuring code quality, contributing to architectural discussions, mentoring, ticket writing, and acting as a source of both domain and general technical knowledge.",
   "Developed an API testing framework in JavaScript using Postman, which was adopted across the business to improve confidence in service integrations.",
-  "Regularly ran knowledge-sharing sessions to walk the team through new features and tools being developed.",
+  "Day-to-day responsibilities include ensuring code quality, contributing to architectural discussions, mentoring, ticket writing, and acting as a source of both domain and general technical knowledge.",
+  "Regularly run knowledge-sharing sessions to walk the team through new features and tools being developed.",
+  "Organises and runs a PHP Community of Practice — a cross-team forum covering what teams have shipped, the direction PHP is heading, and interesting developments in the ecosystem.",
   "Provided formal line management during 2024–2025, including 1-2-1s, performance reviews, and leave approval for direct reports.",
 ]
 awards = [
@@ -53,6 +55,7 @@ awards = [
   "2025 — Nominated for Product and Tech Person of the Year",
   "2025 — Product and Tech Team of the Year (Subscription Platform project)",
   "2025 — CEO Award (Subscription Platform project)",
+  "2026 — Product and Tech Leadership Behaviours Adaptive Award"
 ]
 
 [[extra.experience]]
@@ -178,10 +181,10 @@ highlights = [
   "Co-designed and delivered a Symfony micro-services architecture replacing a WordPress monolith for BBC Good Food, building the AWS SQS inter-service message queue layer (2019–2022).",
   "Designed and delivered a Customer Data Platform integration within a year — event-driven PHP services pushing data to email and CDP systems, and a Lambda/Serverless GDPR admin application with internal identity-controlled access.",
   "Key contributor to replacing the entire web and print subscription platform with a third-party provider in 9 months, on time and within budget.",
-  "Built a business-wide API testing framework in JavaScript using Postman; ran regular knowledge-sharing sessions across the engineering team.",
+  "Built a business-wide API testing framework in JavaScript using Postman; runs regular knowledge-sharing sessions and a PHP Community of Practice across the engineering team.",
   "Formal line management (2024–2025); ongoing responsibilities include architectural review, mentoring, and code quality.",
 ]
-awards = "Product and Tech Most Improved Developer (2019) · Most Innovative Developer, peer-voted (2024) · Team of Year & CEO Award (2025)"
+awards = "Product and Tech Most Improved Developer (2019) · Most Innovative Developer, peer-voted (2024) · Team of Year & CEO Award (2025) · Leadership Behaviours Adaptive Award (2026)"
 
 [[extra.cv_experience]]
 company = "Southbank Investment Research"
@@ -222,7 +225,7 @@ degree = "Bachelor of Multimedia"
 institution = "Griffith University, Brisbane, Australia"
 
 [extra.ai_take]
-body = "AI is a tool — a powerful one, but a tool nonetheless. I enjoy problem-solving: not just arriving at a solution, but understanding how it is built and why it works the way it does. There is something lost when AI handles the details, and I think that matters. That said, the industry is moving and I am moving with it. The developers who thrive will be those who use AI with judgement, not those who outsource their thinking to it."
+body = "AI is a powerful tool — and that's exactly what it is: a tool. The developers who thrive will be those who use it with judgement, not those who outsource their thinking to it. I find I'm most useful at the intersection of the two: I understand what's being built well enough to know when to reach for it and when not to."
 
 [extra.hobbies]
 items = ["Cooking", "Video games", "Homelabbing"]
