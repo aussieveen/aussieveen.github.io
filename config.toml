@@ -159,6 +159,18 @@ tech = ["Symfony", "PHP", "Self-hosted"]
 url = "https://github.com/aussieveen/cookbook"
 
 [[extra.projects]]
+name = "Meal Planner"
+description = "A Symfony API for planning weekly meals. Fetches recipes from Cookbook and stores weekly plans in MongoDB. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "MongoDB", "Self-hosted"]
+url = "https://github.com/aussieveen/meal-planner"
+
+[[extra.projects]]
+name = "Family App"
+description = "A shared family dashboard displayed on a wall-mounted tablet. Shows the week at a glance — calendar events and who is affected by them. Backed by a Symfony API with a React frontend. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "React", "Self-hosted"]
+url = "https://github.com/aussieveen/family-app"
+
+[[extra.projects]]
 name = "Inventory"
 description = "A Symfony application for tracking where things are stored around the home. Self-hosted on my home server."
 tech = ["Symfony", "PHP", "Self-hosted"]
