@@ -8,16 +8,16 @@ title = "Simon McWhinnie — Senior PHP Developer"
 [extra]
 author = "Simon McWhinnie"
 role = "Senior PHP Developer"
-bio = "I enjoy solving complex problems and building robust, well-considered solutions — the messier the brief, the better. I stay calm under pressure, work through difficult problems methodically, and can be trusted to deliver. I primarily work in PHP, reaching for Rust and Python where the problem demands it. The GIFs scattered through this page are a fair character reference: I am Australian, and I refuse to take things too seriously when I do not have to. I am looking for a lead or principal role in a small, quality-focused team that has a say in product decisions — hybrid or remote, greenfield welcome."
-meta_description = "Senior PHP Developer with 16+ years experience. PHP, Rust, Python, AWS, micro-services, event-driven architecture. Near London, hybrid/remote. Seeking lead or principal roles."
+bio = "I enjoy solving complex problems and building robust, well-considered solutions — the messier the brief, the better. I stay calm under pressure, work through difficult problems methodically, and can be trusted to deliver. I primarily work in PHP, reaching for Rust and Python where the problem demands it. I am looking for a lead or principal role in a small, quality-focused team that has a say in product decisions — hybrid or remote. The GIFs scattered through this page are a fair character reference: I am Australian, and I refuse to take things too seriously when I do not have to."
+meta_description = "Senior PHP Developer with 16+ years experience. PHP, Rust, Python, AWS, micro-services, event-driven architecture. Horsham, UK, hybrid/remote. Seeking lead or principal roles."
 email = "simon.mcwhinnie@gmail.com"
 linkedin = "https://www.linkedin.com/in/simonmcwhinnie"
 github = "https://github.com/aussieveen"
-location = "Near London, UK"
-availability = "Hybrid"
+location = "Horsham, UK"
+availability = "Hybrid/Remote"
 
 [[extra.stats]]
-value = "15+"
+value = "16+"
 label = "Years experience"
 
 [[extra.stats]]
@@ -40,10 +40,10 @@ note = "Promoted to Senior Developer in March 2020"
 callout = "Delivered three critical business projects on time and within budget, including two back-to-back in consecutive years: a Customer Data Platform integration (2024) and a full subscription platform replacement in 9 months (2025) — the latter recognised with company-wide awards."
 highlights = [
   "Integral part of the BBC Good Food migration onto a new platform — a 3-year project (2019–2022) working alongside other senior developers to design and deliver a completely new micro-services architecture in Symfony, replacing a WordPress monolith.",
-  "Became a critical contributor to the message queue service, handling inter-service communication and pushing content from WordPress into the content-providing APIs underpinning the new architecture.",
+  "Became a critical contributor to the message queue service, handling inter-service communication and pushing content from WordPress into the content-providing APIs underpinning the new architecture. Later contributed to its deprecation and migration into a Webhooks solution.",
   "Led development of mechanisms supporting a new Customer Data Platform — a critical marketing initiative delivered on time within a year. Built multiple PHP services including an event-driven, worker-based solution pushing data to email and CDP systems, and a Lambda-based web admin application supporting GDPR requests with access controlled via the company's internal identity solution.",
   "Key contributor to replacing the entire web and print subscription platform with a new third-party provider — a 9-month project delivered on time and within budget. Provided CDP integration expertise, extensive code reviews, and technical guidance throughout.",
-  "Developed an API testing framework in JavaScript using Postman, which was adopted across the business to improve confidence in service integrations.",
+  "Initiated the migration from AWS CodeBuild to GitHub Actions for automated testing — simplifying test setup, enabling shared actions across teams, and ensuring consistency in how tests were run across the codebase.",
   "Day-to-day responsibilities include ensuring code quality, contributing to architectural discussions, mentoring, ticket writing, and acting as a source of both domain and general technical knowledge.",
   "Regularly run knowledge-sharing sessions to walk the team through new features and tools being developed.",
   "Organises and runs a PHP Community of Practice — a cross-team forum covering what teams have shipped, the direction PHP is heading, and interesting developments in the ecosystem.",
@@ -190,10 +190,14 @@ company = "Immediate Media"
 title = "Senior PHP Developer"
 period = "Jun 2018 – Present"
 highlights = [
-  "Co-designed and delivered a Symfony micro-services architecture replacing a WordPress monolith for BBC Good Food, building the AWS SQS inter-service message queue layer (2019–2022).",
+  "Co-designed and delivered a Symfony micro-services architecture for BBC Good Food, simplifying a monolith WordPress service (2019–2022).",
+  "Built and maintained the AWS SQS inter-service message queue layer, handling communication between services underpinning the new architecture.",
+  "Contributed to the deprecation of the message queue service and its migration into a Webhooks solution.",
   "Designed and delivered a Customer Data Platform integration within a year — event-driven PHP services pushing data to email and CDP systems, and a Lambda/Serverless GDPR admin application with internal identity-controlled access.",
   "Key contributor to replacing the entire web and print subscription platform with a third-party provider in 9 months, on time and within budget.",
-  "Built a business-wide API testing framework in JavaScript using Postman; runs regular knowledge-sharing sessions and a PHP Community of Practice across the engineering team.",
+  "Built a business-wide API testing framework in JavaScript using Postman, improving confidence in service integrations across teams.",
+  "Initiated the migration from AWS CodeBuild to GitHub Actions for automated testing — simplifying test setup, enabling shared reusable actions, and ensuring tests were run consistently across the codebase.",
+  "Runs regular knowledge-sharing sessions and a PHP Community of Practice across the engineering team.",
   "Formal line management (2024–2025); ongoing responsibilities include architectural review, mentoring, and code quality.",
 ]
 awards = "Product and Tech Most Improved Developer (2019) · Most Innovative Developer, peer-voted (2024) · Team of Year & CEO Award (2025) · Leadership Behaviours Adaptive Award (2026)"
