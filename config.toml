@@ -141,28 +141,10 @@ name = "AI Tools"
 skills = ["Claude Code", "GitHub Copilot", "Codex"]
 
 [[extra.projects]]
-name = "Devtool"
-description = "A Rust-based TUI designed to streamline my development workflow by simplifying and automating common tasks."
-tech = ["Rust", "TUI"]
-url = "https://github.com/aussieveen/devtool"
-
-[[extra.projects]]
-name = "Todo"
-description = "A Rust-based TUI todo manager following the todo.txt spec, with Google Drive sync to keep the list consistent across devices."
-tech = ["Rust", "TUI", "Google Drive API"]
-url = "https://github.com/aussieveen/todo-tui"
-
-[[extra.projects]]
-name = "Cookbook"
-description = "A Symfony application for managing my personal recipe collection. Self-hosted on my home server."
-tech = ["Symfony", "PHP", "Self-hosted"]
-url = "https://github.com/aussieveen/cookbook"
-
-[[extra.projects]]
-name = "Meal Planner"
-description = "A Symfony API for planning weekly meals. Fetches recipes from Cookbook and stores weekly plans in MongoDB. Self-hosted on my home server."
-tech = ["Symfony", "PHP", "MongoDB", "Self-hosted"]
-url = "https://github.com/aussieveen/meal-planner"
+name = "Gifiac"
+description = "A self-hosted GIF/clip creation and archival tool: upload a video, caption it Frinkiac-style, and export as GIF/MP4/WebM. Self-hosted on my home server."
+tech = ["Rust", "React", "FFmpeg", "Self-hosted"]
+url = "https://github.com/aussieveen/gifiac"
 
 [[extra.projects]]
 name = "Family App"
@@ -171,16 +153,40 @@ tech = ["Symfony", "PHP", "React", "Self-hosted"]
 url = "https://github.com/aussieveen/family-app"
 
 [[extra.projects]]
-name = "Inventory"
-description = "A Symfony application for tracking where things are stored around the home. Self-hosted on my home server."
-tech = ["Symfony", "PHP", "Self-hosted"]
-url = "https://github.com/aussieveen/inventory"
+name = "Meal Planner"
+description = "A Symfony API for planning weekly meals. Fetches recipes from Cookbook and stores weekly plans in MongoDB. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "MongoDB", "Self-hosted"]
+url = "https://github.com/aussieveen/meal-planner"
 
 [[extra.projects]]
 name = "TUI Text Field"
 description = "A Rust crate providing a single-line text input widget with byte-correct, UTF-8-safe cursor navigation for terminal UI applications."
 tech = ["Rust", "TUI", "crates.io"]
 url = "https://github.com/aussieveen/tui-text-field"
+
+[[extra.projects]]
+name = "Todo"
+description = "A Rust-based TUI todo manager following the todo.txt spec, with Google Drive sync to keep the list consistent across devices."
+tech = ["Rust", "TUI", "Google Drive API"]
+url = "https://github.com/aussieveen/todo-tui"
+
+[[extra.projects]]
+name = "Devtool"
+description = "A Rust-based TUI designed to streamline my development workflow by simplifying and automating common tasks."
+tech = ["Rust", "TUI"]
+url = "https://github.com/aussieveen/devtool"
+
+[[extra.projects]]
+name = "Cookbook"
+description = "A Symfony application for managing my personal recipe collection. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "Self-hosted"]
+url = "https://github.com/aussieveen/cookbook"
+
+[[extra.projects]]
+name = "Inventory"
+description = "A Symfony application for tracking where things are stored around the home. Self-hosted on my home server."
+tech = ["Symfony", "PHP", "Self-hosted"]
+url = "https://github.com/aussieveen/inventory"
 
 [extra.cv]
 summary = "Senior PHP developer with 15+ years of experience delivering complex web systems at scale. At Immediate Media for nearly 8 years, I have led three critical business projects, co-designed a micro-services architecture serving millions of readers, and held formal line management responsibility. I am looking to step into a lead or principal role where I can drive technical direction and help engineering teams deliver at their best."
