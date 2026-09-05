@@ -44,6 +44,8 @@ highlights = [
   "Led development of mechanisms supporting a new Customer Data Platform — a critical marketing initiative delivered on time within a year. Built multiple PHP services including an event-driven, worker-based solution pushing data to email and CDP systems, and a Lambda-based web admin application supporting GDPR requests with access controlled via the company's internal identity solution.",
   "Key contributor to replacing the entire web and print subscription platform with a new third-party provider — a 9-month project delivered on time and within budget. Provided CDP integration expertise, extensive code reviews, and technical guidance throughout.",
   "Initiated the migration from AWS CodeBuild to GitHub Actions for automated testing — simplifying test setup, enabling shared actions across teams, and ensuring consistency in how tests were run across the codebase.",
+  "Used Datadog as the primary observability platform for logging, monitoring and incident response across services.",
+  "Delivered a TypeScript-based service, extending strong typing practices beyond the core PHP stack.",
   "Day-to-day responsibilities include ensuring code quality, contributing to architectural discussions, mentoring, ticket writing, and acting as a source of both domain and general technical knowledge.",
   "Regularly run knowledge-sharing sessions to walk the team through new features and tools being developed.",
   "Organises and runs a PHP Community of Practice — a cross-team forum covering what teams have shipped, the direction PHP is heading, and interesting developments in the ecosystem.",
@@ -110,7 +112,7 @@ highlights = [
 
 [[extra.skill_groups]]
 name = "Languages"
-skills = ["PHP", "Python", "Rust"]
+skills = ["PHP", "Python", "Rust", "TypeScript"]
 
 [[extra.skill_groups]]
 name = "Frameworks & CMS"
@@ -118,7 +120,7 @@ skills = ["Symfony", "WordPress", "Composer", "Twig"]
 
 [[extra.skill_groups]]
 name = "Cloud & Infrastructure"
-skills = ["AWS (SQS, ECS, EC2, Lambda, Secrets Manager)", "Serverless", "Docker", "Git", "Linux", "REST APIs", "GitHub Actions", "Jenkins", "CodeBuild", "CodePipeline", "PHP-FPM", "OPcache"]
+skills = ["AWS (SQS, ECS, EC2, Lambda, Secrets Manager, CodeBuild, CodePipeline, S3, API Gateway)", "Serverless", "Docker", "Git", "Linux", "REST APIs", "GitHub Actions", "Jenkins", "PHP-FPM", "OPcache", "Datadog"]
 
 [[extra.skill_groups]]
 name = "Databases"
@@ -203,6 +205,8 @@ highlights = [
   "Key contributor to replacing the entire web and print subscription platform with a third-party provider in 9 months, on time and within budget.",
   "Built a business-wide API testing framework in JavaScript using Postman, improving confidence in service integrations across teams.",
   "Initiated the migration from AWS CodeBuild to GitHub Actions for automated testing — simplifying test setup, enabling shared reusable actions, and ensuring tests were run consistently across the codebase.",
+  "Used Datadog as the primary observability platform for logging, monitoring and incident response.",
+  "Delivered a TypeScript-based service, extending strong typing practices beyond the core PHP stack.",
   "Runs regular knowledge-sharing sessions and a PHP Community of Practice across the engineering team.",
   "Formal line management (2024–2025); ongoing responsibilities include architectural review, mentoring, and code quality.",
 ]
@@ -224,11 +228,11 @@ summary = "Progressed from Web Developer to Senior across digital publishing bus
 
 [[extra.cv_skills]]
 name = "Languages"
-items = "PHP · Symfony · WordPress · Composer · Twig · Python · Rust"
+items = "PHP · Symfony · WordPress · Composer · Twig · Python · Rust · TypeScript"
 
 [[extra.cv_skills]]
 name = "Cloud & Infrastructure"
-items = "AWS (SQS, ECS, EC2, Lambda) · Docker · Serverless · GitHub Actions · Jenkins · CodeBuild · CodePipeline · Linux"
+items = "AWS (SQS, ECS, EC2, Lambda, Secrets Manager, CodeBuild, CodePipeline, S3, API Gateway) · Docker · Serverless · GitHub Actions · Jenkins · Linux · Datadog"
 
 [[extra.cv_skills]]
 name = "Data"
