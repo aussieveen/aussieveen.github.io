@@ -455,6 +455,12 @@ section {
   color: $text;
 }
 
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
 .project-link {
   font-size: 0.75rem;
   font-family: $font-mono;
