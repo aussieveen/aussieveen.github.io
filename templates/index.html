@@ -105,9 +105,14 @@
       <div class="project-card">
         <div class="project-header">
           <div class="project-name">{{ project.name }}</div>
-          {% if project.url is defined and project.url %}
-          <a class="project-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          {% endif %}
+          <div class="project-links">
+            {% if project.live_url is defined and project.live_url %}
+            <a class="project-link" href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer">Live ↗</a>
+            {% endif %}
+            {% if project.url is defined and project.url %}
+            <a class="project-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            {% endif %}
+          </div>
         </div>
         <p class="project-description">{{ project.description }}</p>
         <div class="project-tech">

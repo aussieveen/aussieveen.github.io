@@ -143,10 +143,11 @@ name = "AI Tools"
 skills = ["Claude Code", "GitHub Copilot", "Codex"]
 
 [[extra.projects]]
-name = "Gifiac"
-description = "A self-hosted GIF/clip creation and archival tool: upload a video, caption it Frinkiac-style, and export as GIF/MP4/WebM. Self-hosted on my home server."
-tech = ["Rust", "React", "FFmpeg", "Self-hosted"]
+name = "StrewthGif"
+description = "A public GIF/clip creation and archival tool: upload a video, caption it Frinkiac-style, and export as GIF/MP4/WebM. Google/email login, cloud-hosted with Terraform-provisioned infrastructure (Postgres, S3, Cloudflare R2)."
+tech = ["Rust", "React", "FFmpeg", "Terraform", "AWS"]
 url = "https://github.com/aussieveen/gifiac"
+live_url = "https://www.strewthgif.com"
 
 [[extra.projects]]
 name = "Family App"
