@@ -68,12 +68,6 @@
     </div>
   </section>
 
-  {# ── GIF break ──────────────────────────────────────────────── #}
-  <div class="gif-break fade-in">
-    <img src="/sorry-for-the-pr.gif" alt="Sorry for the PR" loading="lazy">
-    <p class="gif-caption">When you have a particularly nasty pull request for someone to review</p>
-  </div>
-
   {# ── Skills ─────────────────────────────────────────────────── #}
   <section id="skills">
     <h2 class="section-heading">Skills</h2>
@@ -90,12 +84,6 @@
       {% endfor %}
     </div>
   </section>
-
-  {# ── GIF break ──────────────────────────────────────────────── #}
-  <div class="gif-break fade-in">
-    <img src="/itworked.gif" alt="It worked" loading="lazy">
-    <p class="gif-caption">When it works the first time</p>
-  </div>
 
   {# ── Projects ───────────────────────────────────────────────── #}
   <section id="projects">
@@ -122,31 +110,6 @@
         </div>
       </div>
       {% endfor %}
-    </div>
-  </section>
-
-  {# ── GIF break ──────────────────────────────────────────────── #}
-  <div class="gif-break fade-in">
-    <img src="/script-running-as-senior.gif" alt="Script running as senior" loading="lazy">
-    <p class="gif-caption">When you're absolutely certain the migration script is going to run without a hitch</p>
-  </div>
-
-  {# ── Thoughts ───────────────────────────────────────────────── #}
-  <section id="thoughts">
-    <h2 class="section-heading">Thoughts</h2>
-    <div class="thoughts-grid fade-in">
-      <div class="thought-block">
-        <h3>On AI in Development</h3>
-        <p>{{ config.extra.ai_take.body }}</p>
-      </div>
-      <div class="thought-block">
-        <h3>Outside of Work</h3>
-        <ul class="hobbies-list">
-          {% for item in config.extra.hobbies.items %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
     </div>
   </section>
 

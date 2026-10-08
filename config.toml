@@ -8,7 +8,7 @@ title = "Simon McWhinnie — Senior PHP Developer"
 [extra]
 author = "Simon McWhinnie"
 role = "Senior PHP Developer"
-bio = "I enjoy solving complex problems and building robust, well-considered solutions — the messier the brief, the better. I stay calm under pressure, work through difficult problems methodically, and can be trusted to deliver. I primarily work in PHP, reaching for Rust and Python where the problem demands it. I am looking for a lead or principal role in a small, quality-focused team that has a say in product decisions — hybrid or remote. The GIFs scattered through this page are a fair character reference: I am Australian, and I refuse to take things too seriously when I do not have to."
+bio = "I enjoy solving complex problems and building robust, well-considered solutions — the messier the brief, the better. I stay calm under pressure, work through difficult problems methodically, and can be trusted to deliver. I primarily work in PHP, reaching for Rust and Python where the problem demands it. I am looking for a lead or principal role in a small, quality-focused team that has a say in product decisions — hybrid or remote."
 meta_description = "Senior PHP Developer with 16+ years experience. PHP, Rust, Python, AWS, micro-services, event-driven architecture. Horsham, UK, hybrid/remote. Seeking lead or principal roles."
 email = "simon.mcwhinnie@gmail.com"
 linkedin = "https://www.linkedin.com/in/simonmcwhinnie"
@@ -250,9 +250,3 @@ items = "PHPUnit · Postman · Git · Agile"
 [extra.cv_education]
 degree = "Bachelor of Multimedia"
 institution = "Griffith University, Brisbane, Australia"
-
-[extra.ai_take]
-body = "AI is a powerful tool — and that's exactly what it is: a tool. The developers who thrive will be those who use it with judgement, not those who outsource their thinking to it. I find I'm most useful at the intersection of the two: I understand what's being built well enough to know when to reach for it and when not to."
-
-[extra.hobbies]
-items = ["Cooking", "Video games", "Homelabbing"]
