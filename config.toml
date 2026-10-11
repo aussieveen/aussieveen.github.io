@@ -229,7 +229,11 @@ summary = "Progressed from Web Developer to Senior across digital publishing bus
 
 [[extra.cv_skills]]
 name = "Languages"
-items = "PHP · Symfony · WordPress · Composer · Twig · Python · Rust · TypeScript"
+items = "PHP · Python · Rust · TypeScript"
+
+[[extra.cv_skills]]
+name = "Frameworks & CMS"
+items = "Symfony · WordPress · React · Composer · Twig"
 
 [[extra.cv_skills]]
 name = "Cloud & Infrastructure"
